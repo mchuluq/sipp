@@ -1,0 +1,188 @@
+@CHARSET "utf-8";
+
+html { 
+	font-size: 90%;
+	font-family: Verdana,Geneva,Consolas;
+	background: #fff url(../images/chraven-login/bg.png);
+	color: #000;
+	padding:0;
+	margin:0;
+}
+#gate_container{
+	width:500px;
+	margin: 7% auto auto auto;
+	text-align:center;
+}
+
+.login {
+	display: block;	
+	width: 100%;
+	min-height:400px;
+	position: relative;
+	border:1px solid #eee;
+	background:url(../images/chraven-login/gate-bg.png);
+	border-radius:5px;
+	-moz-animation: pulse 2s infinite;	
+	-webkit-animation: pulse 2s infinite;
+}
+/* Firefox Keyframe Animation */
+@-moz-keyframes pulse{
+	0%{		box-shadow:0 0 3px #008aff;}
+	50%{	box-shadow:0 0 10px #008aff;}
+	100%{	box-shadow:0 0 3px #008aff;}
+}
+
+/* Webkit keyframe animation */
+@-webkit-keyframes pulse{
+	0%{		box-shadow:0 0 3px #008aff;}
+	50%{	box-shadow:0 0 10px #008aff;}
+	100%{	box-shadow:0 0 3px #008aff;}
+}
+.shield {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+.form-title{
+	width: auto;
+	margin:20px auto 5px auto;
+	position:center;
+}
+
+.form-box-content {
+	width: 95%;
+	display: block;
+	background: #fff;
+	margin:10px auto;
+	border:1px solid #bbb;
+	border-radius:3px;
+}
+.the-username {
+	margin: 10px auto 10px auto;
+	width: 40%;
+	padding: 5px;
+	cursor: pointer;
+	text-align:center;
+	border:1px solid #ddd;
+	border-radius:3px;
+}
+.the-username-focus {
+	background: #d4d4d4;	
+}
+.the-password {
+	display: none;.
+}
+
+
+.the-form table {
+	text-align:center;
+	width:100%;
+}
+.the-form input[type=text], .the-form input[type=password] {	
+	border: 1px solid #ccc;
+	height: 24px;
+	width: 95%;
+	text-indent: 8px;
+	color:#000;
+	outline:none;
+	text-indent:24px;
+	border-radius:3px;
+}
+.the-form input[type=text]:focus, .the-form input[type=password]:focus {	
+	-moz-animation: pulse 2s infinite;	
+	-webkit-animation: pulse 2s infinite;
+}
+
+.the-form input[type=text] {
+	background: url(../images/chraven-login/user.png) no-repeat;
+}
+.the-form input[type=password] {
+	background: url(../images/chraven-login/key.png) no-repeat;
+}
+.the-form input[type=submit],.flipper {
+	border: 1px solid #a8a8a8;
+    background: #c4c4c4;
+    background: #c4c4c4 linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    background: #c4c4c4 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+    background: #c4c4c4 -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0)); 
+    color: #4f4f4f;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+    padding:5px;
+    font-size:120%;
+    border-radius:5px;
+    width:20%;
+    opacity:0.7;
+}
+.the-username {
+	border: 1px solid #a8a8a8;
+    background: #c4c4c4;
+    background: #c4c4c4 linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0));
+    background: #c4c4c4 -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.8)), to(rgba(255,255,255,0)));
+    background: #c4c4c4 -moz-linear-gradient(top, rgba(255,255,255,0.8), rgba(255,255,255,0)); 
+    color: #4f4f4f;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+    padding:3px;
+    border-radius:5px;
+}
+.the-form input[type=submit]:hover,.the-username:hover,.flipper:hover{ 
+	-moz-box-shadow: 0px 0px 3px #85b2cb, inset 0px 1px 0px rgba(255,255,255,0.25);
+    -webkit-box-shadow: 0px 0px 3px #85b2cb, inset 0px 1px 0px rgba(255,255,255,0.25);
+    box-shadow: 0px 0px 3px #85b2cb, inset 0px 1px 0px rgba(255,255,255,0.25);
+    background: #85b2cb;
+    background: #85b2cb linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,0.4));
+    background: #85b2cb -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to(rgba(255,255,255,0.4)));
+    background: #85b2cb -moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,0.4));
+    opacity:1;
+}
+#back {
+	width: 70%;
+	margin:auto;
+}
+#back p {
+	text-align:center;
+	float:left;
+}
+#back .try-again{
+	float:left;
+}
+#back .back-home{
+	float:right;
+}
+a, a:visited {
+	display:block;
+	font-size: 80%;
+	color: #000;
+	text-decoration: none;
+	cursor:pointer;
+}
+.errors {
+	width: 100%;
+    padding-top: 50px;
+    background:url(../images/chraven-login/gate-bg.png);
+    padding:10px;
+    border-radius:5px;
+    -moz-animation: pulse 2s infinite;	
+	-webkit-animation: pulse 2s infinite;
+}
+.hilight_message {
+	border-radius: 5px;
+	margin:auto;
+	width: auto;
+	background:#fff url('../images/chraven-login/error.png')no-repeat left;
+	border: 1px solid #bbb;
+	color: #000;
+	padding:5px;
+}
+.flipper {
+	margin:20px auto;
+}
+
+
+
+
+
+
+
+
+
